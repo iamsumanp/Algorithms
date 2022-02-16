@@ -49,7 +49,7 @@ const merge = (arr, left, middle, right) => {
     }
   }
 
-  //now copy everthing to arr // each item at copArray of k index in arr index
+  //now copy everthing to arr
 
   for (let k = left; k <= right; k++) {
     arr[k] = copyArray[k];

@@ -24,32 +24,23 @@ const merge = (arr, left, middle, right) => {
     k++; // increment k index of copyArray as elements are filled up
   }
 
-  //now for the exhausted subArray
+  //now for the exhausted sucopyArrayArray
 
-  //when a[i] is greater than mid index i.e 3
   if (i > middle) {
-    //when a[j] is not exhausted and i is exhausted  put elements of j index in copy array and increment k index and i index in a[i]
-
     while (j <= right) {
       copyArray[k] = arr[j];
-
       k++;
-
       j++;
     }
   } else {
-    //when a[i] is not exhausted and j is exhausted  put elements of i index in copy array and increment k index and j index in a[j]
-
     while (i <= middle) {
       copyArray[k] = arr[i];
-
       k++;
-
       i++;
     }
   }
 
-  //now copy everthing to arr // each item at copArray of k index in arr index
+  //now copy everthing to arr
 
   for (let k = left; k <= right; k++) {
     arr[k] = copyArray[k];
